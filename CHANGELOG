@@ -1,0 +1,6 @@
+CHANGES
+=======
+
+* refactor: use pbr and setup.cfg
+* style: cleanup code
+* feat: initial version with east asian character width command

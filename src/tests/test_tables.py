@@ -4,11 +4,11 @@
 # SPDX-License-Identifier: MIT
 # ===------------------------------------------------------------------------===
 
-"""Configuration for python setuptools."""
+"""Unit test cases for the table generator command line tool."""
 
-from setuptools import setup
+from tables import __version__
 
-setup(
-    setup_requires=["pbr"],
-    pbr=True,
-)
+
+def test_version():
+    """Check teh version number is defined."""
+    assert __version__ == "0.1.0"

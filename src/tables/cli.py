@@ -8,12 +8,14 @@
 
 import click
 
+from tables._version import __version__
 from tables.ucd import eaw
 
 CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 
 
 @click.group(context_settings=CONTEXT_SETTINGS)
+@click.version_option(__version__)
 def cli():
     """
     Parse source data from the Unicode Character Database and generate
