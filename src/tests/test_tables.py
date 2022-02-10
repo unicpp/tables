@@ -6,9 +6,12 @@
 
 """Unit test cases for the table generator command line tool."""
 
+import re
+
 from tables import __version__
 
 
 def test_version():
     """Check teh version number is defined."""
-    assert __version__ == "0.1.0"
+    version_regexp = re.compile(r"^\d+(\.\d+){2}")
+    assert version_regexp.match(__version__)

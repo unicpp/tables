@@ -1,6 +1,7 @@
 CHANGES
 =======
 
+* tests: update test case for version variable definition
 * style: universally use LF as line ending
 * refactor: use pbr and setup.cfg
 * style: cleanup code
