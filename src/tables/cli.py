@@ -66,5 +66,5 @@ def eaw_command(static, raw_array, element_type, name):
 
 
 def main():
-    """Invoke the comman dline interface main entry point."""
+    """Invoke the command line interface main entry point."""
     cli()

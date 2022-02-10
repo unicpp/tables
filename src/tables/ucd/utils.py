@@ -34,7 +34,7 @@ def __recommend_block_size(total_size):
 
 def request_sizes(url):
     """
-    Estimate the total size of data that would be obatined through a url
+    Estimate the total size of data that would be obtained through a http
     request and the block size to be used to read it.
 
     Args:
@@ -50,7 +50,7 @@ def request_sizes(url):
     )
     block_size = __recommend_block_size(total_size)
 
-    return (total_size, block_size)
+    return total_size, block_size
 
 
 def start_request(url):
@@ -63,4 +63,4 @@ def start_request(url):
 
     progress_bar = tqdm(total=total_size_in_bytes, unit="iB", unit_scale=True)
 
-    return (response, block_size, progress_bar)
+    return response, block_size, progress_bar

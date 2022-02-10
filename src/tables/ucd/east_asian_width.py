@@ -22,20 +22,21 @@ def load(version, want_widths, except_cats):
     Load the data from the Unicode Character Database and process it for
     in-memory format.
 
-    Args:
-        version (string): unicode version want_widths (list of strings):
-        possible values are
-            "A" : Ambiguous, "F" : Fullwidth, "H" : Halfwidth, "N" : Narrow,
-            "Na" : Neutral (= Not East Asian), "W" : Wide
-        except_cats (list of string): categories to be excluded from the result
-        (see categories.expanded_categories for a list of acceptable values)
+    Args
+        version: unicode version string (major.minor.patch)
+        want_widths: list of width values to include, possible values are:
+            "A" : Ambiguous, "F" : Full width, "H" : Half width,
+            "N" : Narrow, "Na" : Neutral (= Not East Asian), "W" : Wide
+        except_cats: list of categories to be excluded from the result
+            (see categories.expanded_categories for a list of acceptable
+            values)
+    Returns
+        list of intervals, each interval is a tuple (low, high)
 
-    Raises:
+    Raises
         SystemExit: if an exception occurs while loading the data
-
-    Returns:
-        list of intervals: each interval is a tuple (low, high)
     """
+
     source_url = (
         f"https://www.unicode.org/Public/{version}/ucd/EastAsianWidth.txt"
     )

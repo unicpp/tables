@@ -18,7 +18,7 @@ Options:
   -h, --help                 Show this message and exit.
 ```
 
-A typical usage is as follwoing:
+A typical usage is as following:
 
 ```shell
 tables ucd eaw > unicode_width.incl

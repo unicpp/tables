@@ -92,7 +92,7 @@ def load(version):
 
     Returns:
         dictionary: the key is a unicode general category
-        (http://www.unicode.org/reports/tr44/#General_Category_Values) and the
+        (https://www.unicode.org/reports/tr44/#General_Category_Values) and the
         value is the list of code point intervals for that category. Each
         interval is a tuple (low, high).
     """

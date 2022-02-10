@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: MIT
 # ===------------------------------------------------------------------------===
 
-"""Main module for the tables generator."""
+"""Main module for the unicode table generator."""
 
 from tables.cli import main
 
