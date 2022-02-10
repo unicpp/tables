@@ -1,6 +1,7 @@
 CHANGES
 =======
 
+* style: universally use LF as line ending
 * refactor: use pbr and setup.cfg
 * style: cleanup code
 * feat: initial version with east asian character width command
