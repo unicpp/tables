@@ -1,0 +1,6 @@
+site_name: "Blueprint: A Perfect Python Project Structure"
+theme:
+  name: "material"
+
+plugins:
+- search

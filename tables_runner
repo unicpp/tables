@@ -1,0 +1,19 @@
+# ===------------------------------------------------------------------------===
+# Distributed under the MIT License (See accompanying file LICENSE or copy at
+# https://opensource.org/licenses/MIT).
+# SPDX-License-Identifier: MIT
+# ===------------------------------------------------------------------------===
+
+"""A runner script to run the CLI locally without installing the modules."""
+
+import os
+import sys
+import tables
+
+_this_dir = os.path.dirname(os.path.realpath(__file__))
+_srcdir = f"{_this_dir}/src/"
+_filepath = os.path.dirname(sys.argv[0])
+sys.path.insert(1, os.path.join(_filepath, _srcdir))
+
+if __name__ == "__main__":
+    sys.exit(tables.cli.main())
